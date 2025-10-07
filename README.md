@@ -57,14 +57,14 @@ Kurların API üzerinden dinamik olarak alınması, hesaplamaların her zaman g�
 Excel’deki formüller backend’e taşınmıştır.
 
 1. **Toplam (EUR)** → `(Kesim + Dikim + Yıkama + Baskı + Ütü + Aksesuar + İlik TRY)` toplamı, Euro kuruna göre çevrilir.
-1. **Ham Maliyet (€)** → `Toplam (EUR) + (Kumaş Fiyatı (EUR) * Kumaş Metre (EUR)) `
-2. **Genel Gider (€)** → `Ham Maliyet * (Genel Gider Oranı / 100)`
-3. **Kâr (€)** → `(Ham Maliyet + Genel Gider) * (Kârlılık Oranı / 100)`
-4. **Ara Toplam (€)** → `Ham Maliyet + Genel Gider + Kâr`
-5. **Komisyon (€)** → `Ara Toplam * (Komisyon Oranı / 100)`
-6. **KDV (€)** → `(Ara Toplam + Komisyon) * (KDV Oranı / 100)`
-7. **Final EUR** → `Ara Toplam + Komisyon + KDV`
-8. **Final TL / USD / GBP** → Güncel döviz kurlarıyla çarpılarak hesaplanır.
+2. **Ham Maliyet (€)** → `Toplam (EUR) + (Kumaş Fiyatı (EUR) * Kumaş Metre (EUR)) `
+3. **Genel Gider (€)** → `Ham Maliyet * (Genel Gider Oranı / 100)`
+4. **Kâr (€)** → `(Ham Maliyet + Genel Gider) * (Kârlılık Oranı / 100)`
+5. **Ara Toplam (€)** → `Ham Maliyet + Genel Gider + Kâr`
+6. **Komisyon (€)** → `Ara Toplam * (Komisyon Oranı / 100)`
+7. **KDV (€)** → `(Ara Toplam + Komisyon) * (KDV Oranı / 100)`
+8. **Final EUR** → `Ara Toplam + Komisyon + KDV`
+9. **Final TL / USD / GBP** → Güncel döviz kurlarıyla çarpılarak hesaplanır.
 
 ---
 
