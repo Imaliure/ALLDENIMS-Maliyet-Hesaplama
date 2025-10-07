@@ -10,6 +10,13 @@ Amaç, Excel'deki maliyet hesaplama mantığını **backend** tarafında yeniden
 Kullanıcılar, Excel dosyasındaki girdileri web arayüzü üzerinden doldurur.  
 Girilen değerler backend'e gönderilir ve aynı Excel mantığıyla hesaplanan sonuçlar ekrana getirilir.
 
+💱 Canlı Döviz Kurları
+Proje, hesaplamalarda kullanılan döviz dönüşümlerini gerçek zamanlı olarak alır.
+Backend tarafında, ExchangeRate API servisi kullanılarak güncel döviz kurları çekilmektedir.
+Bu API, temel para birimi olarak Euro (EUR) üzerinden çalışır ve diğer para birimlerinin (örneğin USD, TRY, GBP) anlık kur değerlerini döndürür.
+
+Bu sayede sistem, Euro (EUR) tabanlı fiyatları her istekte en güncel USD, TRY ve GBP değerlerine göre otomatik olarak dönüştürür.
+Kurların API üzerinden dinamik olarak alınması, hesaplamaların her zaman güncel piyasa verilerine dayanmasını sağlar.
 ---
 
 ## 🧠 Input ve Output Alanları
