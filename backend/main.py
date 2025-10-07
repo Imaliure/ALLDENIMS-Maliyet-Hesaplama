@@ -47,9 +47,9 @@ def get_exchange_rates():
     data = response.json()
     return {
         "EUR": 1.0,
-        "USD": 1.11768167108,
-        "TRY": 37.99,
-        "GBP": 0.84553750278
+        "USD": data["rates"]["USD"],
+        "TRY": data["rates"]["TRY"],
+        "GBP": data["rates"]["GBP"]
     }
 
 # --- ENDPOINTLER ---
