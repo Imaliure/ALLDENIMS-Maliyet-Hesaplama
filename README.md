@@ -17,6 +17,7 @@ Bu API, temel para birimi olarak Euro (EUR) üzerinden çalışır ve diğer par
 
 Bu sayede sistem, Euro (EUR) tabanlı fiyatları her istekte en güncel USD, TRY ve GBP değerlerine göre otomatik olarak dönüştürür.
 Kurların API üzerinden dinamik olarak alınması, hesaplamaların her zaman güncel piyasa verilerine dayanmasını sağlar.
+
 ---
 
 ## 🧠 Input ve Output Alanları
