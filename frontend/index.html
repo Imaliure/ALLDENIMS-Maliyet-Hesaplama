@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>ALLDENIMS Maliyet Hesaplama</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1 class="title">ALLDENIMS MALİYET VE FİYAT TEKNİK TESTİ</h1>
+    </div>
+  
+
+  <form id="costForm">
+    <div class="top-section">
+      <label>Adet Aralığı:</label>
+      <select id="quantity_range">
+        <option value="0-50">0-50</option>
+        <option value="51-100">51-100</option>
+        <option value="101-200">101-200</option>
+      </select>
+    </div>
+
+    <div class="form-grid">
+  <!-- Sol bölüm: İşçilik -->
+  <div class="left">
+    <h3>İşlemler & İşçilik</h3>
+    <div class="form-row">
+      <label>Kesim TRY:</label>
+      <input type="number" id="cutting_try">
+    </div>
+    <div class="form-row">
+      <label>Dikim TRY:</label>
+      <input type="number" id="sewing_try">
+    </div>
+    <div class="form-row">
+      <label>Yıkama TRY:</label>
+      <input type="number" id="washing_try">
+    </div>
+    <div class="form-row">
+      <label>Baskı TRY:</label>
+      <input type="number" id="printing_try">
+    </div>
+    <div class="form-row">
+      <label>Ütü-Paket TRY:</label>
+      <input type="number" id="ironing_try">
+    </div>
+    <div class="form-row">
+      <label>Aksesuar TRY:</label>
+      <input type="number" id="accessories_try">
+    </div>
+    <div class="form-row">
+      <label>İlik TRY:</label>
+      <input type="number" id="buttonhole_try">
+    </div>
+  </div>
+
+  <!-- Sağ bölüm: Kumaş ve oranlar -->
+  <div class="right">
+    <h3>Kumaş Detayları & Oranlar</h3>
+    <div class="form-row">
+      <label>Kumaş Fiyatı (EUR):</label>
+      <input type="number" id="fabric_price_eur" placeholder="örn: 3.16" step="0.01">
+    </div>
+    <div class="form-row">
+      <label>Kumaş Metre (EUR):</label>
+      <input type="number" id="fabric_meter_eur" placeholder="örn: 1.2 (metre başına)" step="0.01">
+    </div>
+    <div class="form-row">
+      <label>Genel Gider Oranı (%):</label>
+      <input type="number" id="general_expense_ratio" placeholder="örn: 12.5" step="0.1">
+    </div>
+    <div class="form-row">
+      <label>Kârlılık Oranı (%):</label>
+      <input type="number" id="profit_ratio" placeholder="örn: 30" step="0.1">
+    </div>
+    <div class="form-row">
+      <label>KDV Oranı (%):</label>
+      <input type="number" id="kdv_rate" placeholder="örn: 20" step="0.1">
+    </div>
+    <div class="form-row">
+      <label>Komisyon Oranı (%):</label>
+      <input type="number" id="comission_rate" placeholder="örn: 5" step="0.1">
+    </div>
+  </div>
+</div>
+
+
+    <div class="submit-section">
+      <button type="submit">Hesapla</button>
+    </div>
+  </form>
+
+  <div id="result">
+  <h2 id="sonuclarbaslik">Sonuçlar</h2>
+  <div class="table-header">
+  <button id="clearHistoryBtn" style="background-color: red;">Tümünü Temizle</button>
+</div>
+  <table id="resultTable">
+    <thead>
+      <tr>
+        <th>Adet Aralığı</th>
+        <th>Tarih / Saat</th>
+        <th>Toplam (EUR)</th>
+        <th>Ham Maliyet (€)</th>
+        <th>Genel Gider (€)</th>
+        <th>Kâr (€)</th>
+        <th>Ara Toplam (€)</th>
+        <th>Komisyon (€)</th>
+        <th>KDV (€)</th>
+        <th>Final EUR</th>
+        <th>Final TL</th>
+        <th>Final USD</th>
+        <th>Final GBP</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- JS buraya yazacak -->
+    </tbody>
+  </table>
+</div>
+<div id="errorToast" class="toast hidden"></div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

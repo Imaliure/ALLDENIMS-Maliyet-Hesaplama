@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  background-color: #0078d7; /* istediğin renk */
+  display: inline-block;     /* sadece metnin kapladığı kadar genişlik */
+  padding: 5px 10px;         /* metinle arka plan arasına boşluk */
+  border-radius: 8px;        /* köşeleri yumuşatmak istersen */
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+}
+
+.top-section {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.top-section label {
+  font-size: 17px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.top-section select {
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  min-width: 160px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover ve focus efektleri */
+.top-section select:hover,
+.top-section select:focus {
+  border-color: #007bff;
+  background-color: #fff;
+  outline: none;
+}
+
+.form-grid {
+  display: flex;
+  gap: 40px; /* Sol ve sağ bölüm arası boşluk */
+}
+
+.left, .right {
+  flex: 1;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  width: 180px; /* label genişliği, inputlar hizalanacak */
+  text-align: right; /* isteğe bağlı, label metni sağda */
+  margin-right: 10px;
+}
+
+.form-row input {
+  flex: 1; /* input kutusu sağa doğru uzasın */
+}
+.left h3, .right h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 170px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100px;
+  padding: 4px;
+}
+
+.submit-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #0078d7;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Result Table */
+#result table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#result th, #result td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+#result th {
+  background-color: #0078d7;
+  color: white;
+}
+
+#result tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#sonuclarbaslik {
+    text-align: center;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f44336; /* hata: kırmızı */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-size: 14px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast.success {
+  background-color: #4caf50; /* başarı: yeşil */
+}
+
+.toast.error {
+  background-color: #f44336;
+}
